@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:wght@500&display=swap');
+
+.container{
+    border: 1px solid black;/*  */
+    height: 100vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hex-colors{
+/*     border: 1px solid black;
+ */    text-align: center;
+}
+
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorchange 1s infinite alternate;
+}
+
+.hex-colors h2{
+/*     border: 1px solid black;
+ */    font-size: 2rem;
+    margin-top: 15%;
+}
+@keyframes colorchange{
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: red;
+    }
+    60%{
+        color: green;
+    }
+    80%{
+        color: yellow;
+    }
+    100%{
+        color: orange;
+    }
+}
+
+@media(max-width:480px){
+.hex-colors h1{
+    font-size: 1.5rem;
+    
+}
+.hex-colors h2{
+    font-size: 1.5rem;
+
+}
+}
+
+button{
+    height: 30px;
+    width: 5rem;
+    border-radius: 10px;
+    background-color: blueviolet ;
+    animation: colorchanges 2s infinite alternate ;
+}
+
+@keyframes colorchanges{
+    0%{
+       color: aquamarine; 
+    }
+    20%{
+       color: red; 
+    }
+    40%{
+       color: green; 
+    }
+    60%{
+       color: orange; 
+    }
+    80%{
+       color: palegreen; 
+    }
+    100%{
+       color: pink; 
+    }
+}
